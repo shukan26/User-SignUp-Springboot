@@ -35,8 +35,6 @@ public class UserInfoController {
             log.error("Error when getting all users : " + e.getMessage());
             return new ResponseEntity("Error when getting all users ", HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
-
     }
 
     @GetMapping("/user/{id}")
