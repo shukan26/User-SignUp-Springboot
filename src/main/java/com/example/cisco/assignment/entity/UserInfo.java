@@ -14,22 +14,15 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "User_Info")
-//@IdClass(EmailId.class)
-//TODO Fix Primary Key
+
 public class UserInfo {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "userId")
     private UUID userId;
 
-//    @EmbeddedId
-//    private EmailId id;
-
     private String firstName;
     private String lastName;
-
-//    @Id
     private String email;
 
     private String twitter;
